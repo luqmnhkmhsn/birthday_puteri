@@ -1,0 +1,113 @@
+/* Basic Reset and Fonts */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f06d99, #ffb4a2); /* Gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Main Content Container */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Initial Message Styling */
+#initial-message h1 {
+    color: #f06d99;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+#surprise-button {
+    background-color: #f06d99;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+#surprise-button:hover {
+    background-color: #d85c86;
+    transform: translateY(-2px);
+}
+
+/* Surprise Content Styling */
+.hidden {
+    display: none;
+}
+
+#surprise-content {
+    padding: 20px;
+}
+
+.title {
+    color: #f06d99;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    animation: pulse 1.5s infinite;
+}
+
+.message {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.footer-message {
+    font-style: italic;
+    color: #888;
+    margin-top: 30px;
+}
+
+/* Heart Animation */
+.heart-container {
+    font-size: 4rem;
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+}
+
+.heart {
+    display: inline-block;
+    animation: floatUp 3s ease-out infinite;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+@keyframes floatUp {
+    0% { bottom: -20px; opacity: 0; transform: rotate(0deg) scale(0.8); }
+    50% { opacity: 1; }
+    100% { bottom: 100px; opacity: 0; transform: rotate(10deg) scale(1.2); }
+}
