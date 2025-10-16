@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialMessage = document.getElementById('initial-message');
     const surpriseContent = document.getElementById('surprise-content');
 
+
+    const birthdaySong = document.getElementById('birthday-song');
     // Function to handle the surprise reveal
     const revealSurprise = () => {
         // 1. Hide the initial message
@@ -21,4 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Attach the event listener to the button
     surpriseButton.addEventListener('click', revealSurprise);
+
 });
